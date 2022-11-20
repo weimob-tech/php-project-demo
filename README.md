@@ -29,6 +29,7 @@
 |   |-- ...                         # 其它三方组件依赖
 |   |-- weimob-cloud                # 微盟云组件依赖
 |       |-- php-project-boot        # 微盟云PHP工程启动脚手架
+|       |-- php-ability-sdk         # 微盟云开放能力SDK
 |       |-- ...   
 ```
 
@@ -39,7 +40,9 @@
 	*  git clone git@github.com:weimob-tech/php-project-demo.git
 	*  也可以在github下载demo的zip包
 2. 修改项目名与composer.json里的name字段
-3. 添加项目的composer的依赖包
+3. 添加项目的composer的依赖包，默认的依赖包有
+	* weimob-cloud/php-project-boot
+	* weimob-cloud/php-ability-sdk
 4. 安装包，使用composer命令
 	* composer install
 	* composer update
