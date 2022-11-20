@@ -41,8 +41,8 @@
 	*  也可以在github下载demo的zip包
 2. 修改项目名与composer.json里的name字段
 3. 添加项目的composer的依赖包，默认的依赖包有
-	* weimob-cloud/php-project-boot
-	* weimob-cloud/php-ability-sdk
+	* weimob-cloud/php-project-boot ，[版本](https://packagist.org/packages/weimob-cloud/php-project-boot)，[使用文档](https://github.com/weimob-tech/php-project-boot/blob/master/README.md)
+	* weimob-cloud/php-ability-sdk，[版本](https://packagist.org/packages/weimob-cloud/php-ability-sdk) ，[使用文档](https://github.com/weimob-tech/php-ability-sdk/blob/master/README.md)
 4. 安装包，使用composer命令
 	* composer install
 	* composer update
@@ -52,7 +52,7 @@
 	
 	``` bash
 	--xdebug 启动
-	php -d variables_order=EGPCS -dxdebug.remote_enable=1 -dxdebug.remote_mode=req -dxdebug.remote_port=9000 -dxdebug.remote_host=127.0.0.1 -dxdebug.remote_autostart=1 -S localhost:18888 -t ../public ../public/index.php
+	php -d variables_order=EGPCS -d xdebug.remote_enable=1 -d xdebug.remote_mode=req -d xdebug.remote_port=9000 -d xdebug.remote_host=127.0.0.1 -d xdebug.remote_autostart=1 -S localhost:18888 -t ../public ../public/index.php
 	-- 后台启动
 	php -d variables_order=EGPCS -S localhost:18888 -t ../public ../public/index.php
 	```  
